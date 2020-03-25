@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+{% block body %}
+	<div>
+		<h3>Search Results</h3>
+	</div>
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th scope="col">Paste Title</th>
+				<th scope="col">Paste Date</th>
+				<th scope="col">Paste URL</th>
+			</tr>
+		</thead>
+		<tbody>
+		{% if not lpaste['hits']['hits'] %}	
+		<tr class="table-light">
+			<td colspan="3">No Pastes Found</td>
+		</tr>
+		{% else %}
+			{% for paste in lpaste['hits']['hits'] %}
+			<tr class="table-dark">
+				<td>{{ paste['_source']['paste_title'] }}</td>
+				<td>{{ paste['_source']['paste_date'] }}</td>
+				<td><a href="{{ url_for('get_hostname',id=paste['_source']['paste_id'],page=encode(1)) }}">{{ paste['_source']['paste_url'] }}</a></td>
+			</tr>
+			{% endfor %}
+		{% endif %}
+		</tbody>
+	</table>
+{% endblock %}

@@ -1,0 +1,105 @@
+{% extends 'layout.html' %}
+{% block body %}
+	{{ details['hits']['hits'][0]['_source']['paste_title'] }}
+{% set pg=page.decode('base64') | int %}
+{% set id=id %}
+	<div style="float:right;">
+		<ul class="pagination">
+			<li class="page-item">
+				<a class="page-link" href="{{ url_for('get_paste_data',id=id,page=encode(pg-1)) }}">&laquo;</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="{{ url_for('get_paste_data',id=id,page=encode(1)) }}">1</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="{{ url_for('get_paste_data',id=id,page=encode(2)) }}">2</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="{{ url_for('get_paste_data',id=id,page=encode(3)) }}">3</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="{{ url_for('get_paste_data',id=id,page=encode(4)) }}">4</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="{{ url_for('get_paste_data',id=id,page=encode(5)) }}">5</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="{{ url_for('get_paste_data',id=id,page=encode(pg+1)) }}">&raquo;</a>
+			</li>		
+		</ul>
+	</div>
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th scope="col">IP Address</th>
+				<th scope="col">Host Names</th>
+			</tr>
+		</thead>
+		<tbody>
+		{% if not hosts['hits']['hits'] %}	
+			<tr class="table-light">
+				<td colspan="2">NO IP/Host Found</td>
+			</tr>
+		{% else %}
+			{% for host in hosts['hits']['hits'] %}
+			<tr class="table-dark">		
+				<td>{{ host['_source']['ip'] }}</td>
+				<td>{{ host['_source']['host'] }}</td>
+			</tr>
+			{% endfor %}
+		{% endif %}
+		</tbody>
+	</table>
+    <br><br>
+    <table class="table table-hover">
+		<thead>
+			<tr>
+				<th scope="col">Email</th>
+			</tr>
+		</thead>
+		<tbody>
+		{% if not email['hits']['hits'] %}
+			<tr class="table-light">
+				<td colspan="2">NO Email Found</td>
+			</tr>
+		{% else %}
+			{% for mail in email['hits']['hits'] %}
+			<tr class="table-dark">
+				<td>{{ mail['_source']['email'] }}</td>
+			</tr>
+			{% endfor %}
+		{% endif %}
+		</tbody>
+	</table>
+
+	<div style="float:right;">
+		<ul class="pagination">
+			<li class="page-item">
+				<a class="page-link" href="{{ url_for('get_paste_data',id=id,page=encode(pg-1)) }}">&laquo;</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="{{ url_for('get_paste_data',id=id,page=encode(1)) }}">1</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="{{ url_for('get_paste_data',id=id,page=encode(2)) }}">2</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="{{ url_for('get_paste_data',id=id,page=encode(3)) }}">3</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="{{ url_for('get_paste_data',id=id,page=encode(4)) }}">4</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="{{ url_for('get_paste_data',id=id,page=encode(5)) }}">5</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="{{ url_for('get_paste_data',id=id,page=encode(pg+1)) }}">&raquo;</a>
+			</li>		
+		</ul>
+	</div>
+	<div class="jumbotron">
+		<h2>RAW Paste</h2>
+			{{ details['hits']['hits'][0]['_source']['raw_paste'] }}
+	</div>
+{% endblock %}
+	

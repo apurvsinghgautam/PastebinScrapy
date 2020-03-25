@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+   	<span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="/">PastebinScrapy</a>
+  <div class="collapse navbar-collapse show" id="navbarColor01">
+   	<ul class="navbar-nav mr-auto">
+  		<li class="nav-item active">
+   			<a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+  		</li>
+      {% if session.logged_in %}
+  		<li class="nav-item">
+  			<a class="nav-link" href="/get_latest_paste/{{ encode(1) }}">Paste</a>
+  		</li>
+      {% endif %}
+   	</ul>
+   	<ul class="navbar-nav navbar-right">
+      {% if session.logged_in %}
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">Logout</a>
+      </li>
+      {% else %}
+   		<li class="nav-item">
+   			<a class="nav-link" href="/login">Login</a>
+   		</li>
+   		<li class="nav-item">
+   			<a class="nav-link" href="/register">Register</a>
+   		</li>
+      {% endif %}
+   	</ul>
+  </div>
+</nav>

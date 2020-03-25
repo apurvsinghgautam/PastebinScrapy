@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pastebin Scraping</title>
+	<link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+	{% include 'includes/_navbar.html' %}
+	<div class="jumbotron">
+		{% include 'includes/_messages.html' %}
+		{% block body %}{% endblock %} 
+	</div>
+</body>
+</html>
