@@ -33,4 +33,4 @@ This is a Web Scraping application built on Flask. This web application utilizes
 
 ## Contributors
 
-- [Apurv Singh Gautam](https://apurvsinghguatam.me)
+- [Apurv Singh Gautam](https://apurvsinghgautam.me)
