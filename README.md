@@ -1,7 +1,7 @@
 # Pastebin Scraping
 
 
-This is a Web Scraping application built on Flask. This web application utilizes Pastebin Scraping API and scrapes IP addresses, hashes, and emails from latest pastes of Pastebin.
+This is a Web Scraping application built on Flask. This web application utilizes Pastebin Scraping API and scrapes IOCs including IP addresses, hashes, and emails from latest pastes of Pastebin.
 
 
 ![Pastebin Scraping Homepage](https://user-images.githubusercontent.com/20106707/39991641-d14dcbe6-578d-11e8-9b41-82926273694b.png)
