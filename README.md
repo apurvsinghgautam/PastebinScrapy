@@ -18,6 +18,7 @@ This is a Web Scraping application built on Flask. This web application utilizes
 
 ## Usage
 
+- Enter your Pastebing Scraping API key and Flask secret key in the code
 - Run the `PastebinScraping.py` file
 - Open `127.0.0.1:5000` in any browser
 
@@ -32,4 +33,4 @@ This is a Web Scraping application built on Flask. This web application utilizes
 
 ## Contributors
 
-- [Apurv Singh Gautam](https://github.com/apurvsinghgautam/)
+- [Apurv Singh Gautam](https://apurvsinghguatam.me)
