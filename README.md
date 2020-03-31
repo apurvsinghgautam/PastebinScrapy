@@ -28,6 +28,8 @@ This is a Web Scraping application built on Flask. This web application utilizes
 
 ![Pastebin Scraping Hostaname](https://user-images.githubusercontent.com/20106707/40050475-3cd0bd2a-5855-11e8-99e9-2f2deb91bfed.png)
 
+![Pastebin Scraping Detailed](https://user-images.githubusercontent.com/20106707/78074932-9ebe6d00-7371-11ea-86e5-0acd81e9fdb0.png)
+
 ## Contributors
 
 - [Apurv Singh Gautam](https://github.com/apurvsinghgautam/)
