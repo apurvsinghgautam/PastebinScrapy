@@ -1,5 +1,6 @@
 # PastebinScrapy
 
+[![HitCount](http://hits.dwyl.com/{username}/https://githubcom/apurvsinghgautam/PastebinScrapy.svg)](http://hits.dwyl.com/{username}/https://githubcom/apurvsinghgautam/PastebinScrapy)
 
 This is a Threat Hunting tool built on Flask. This tool utilizes Pastebin Scraping API and scrapes IOCs including IP addresses, domains, hashes, and emails from latest pastes of Pastebin. It uses Elasticsearch as the database to store the pastes and Kibana is used for visualizing data from Elasticsearch.
 
