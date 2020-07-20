@@ -2,6 +2,8 @@
 
 ![https://img.shields.io/github/stars/apurvsinghgautam/PastebinScrapy](https://img.shields.io/github/stars/apurvsinghgautam/PastebinScrapy) ![https://img.shields.io/github/forks/apurvsinghgautam/PastebinScrapy](https://img.shields.io/github/forks/apurvsinghgautam/PastebinScrapy)
 
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+
 This is a Threat Hunting tool built on Flask. This tool utilizes Pastebin Scraping API and scrapes IOCs including IP addresses, domains, hashes, and emails from latest pastes of Pastebin. It uses Elasticsearch as the database to store the pastes and Kibana is used for visualizing data from Elasticsearch.
 
 
