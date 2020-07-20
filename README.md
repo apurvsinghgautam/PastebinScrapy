@@ -1,12 +1,5 @@
 # PastebinScrapy
 
-> [apurvsinghgautam@gmail.com](apurvsinghgautam@gmail.com) &nbsp;&middot;&nbsp;
-> GitHub [@apurvsinghgautam](https://github.com/apurvsinghgautam) &nbsp;&middot;&nbsp;
-> Twitter [@ASG_Sc0rpi0n](https://twitter.com/ASG_Sc0rpi0n)
-
-[MIT]: http://mit-license.org/
-[contributors]: http://github.com/rstacruz/nprogress/contributors
-
 ![https://img.shields.io/github/stars/apurvsinghgautam/PastebinScrapy](https://img.shields.io/github/stars/apurvsinghgautam/PastebinScrapy) ![https://img.shields.io/github/forks/apurvsinghgautam/PastebinScrapy](https://img.shields.io/github/forks/apurvsinghgautam/PastebinScrapy)
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
